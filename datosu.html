@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Taller 3</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>Rellena tu CV</h1>
+        <label for="nombre">Nombre </label> 
+        <br/>
+        <input type="text" id="Nombre" maxlength="20" size="40" name="Nombre">
+
+
+        <br/>
+        <label for="apellidos">Apellidos </label> 
+        <br/>
+        <input type="text" id="Apellidos" maxlength="20" size="80" name="Apellido">
+
+
+        <br/>
+        <label for="contraseña">Contraseña </label> 
+        <br/>
+        <input type="text" id="Apellidos" maxlength="20" size="40" name="Apellido">
+
+
+        <br/>
+        <label for="Ccontraseña"> Confirme Contraseña </label> 
+        <br/>
+        <input type="text" id="Ccontraseña" maxlength="20" size="40" name="Ccontraseña">
+
+        <br/>
+        <label for="Identificacion">Identificación </label> 
+        <br/>
+        <select name="" id="id">
+            <option value="TI">TI</option>
+            <option value="CC">CC</option>
+            <option value="CE">CE</option>
+
+        </select> <input type="number" id="id" maxlength="15" size="15" name="id">
+        <br/>
+        <label for="Sexo">Sexo</label>
+        <br/>
+        <input type="radio" name="sexo" value="Hombre" id="Hombre"><label for="Hombre">Hombre</label>
+        <br/>
+        <input type="radio" name="sexo" value="Mujer" id="Mujer"><label for="Mujer">Mujer</label>
+        <br/>
+        <br/>
+        <label for="Foto">Incluir mi foto &#128151</label>
+        <input type="file" name="foto">
+        <br/>
+        <br/>
+        <input type="checkbox"><label for="Estudiante">Estudiante...</label>
+        <br/>
+        <br/>
+        <form action="maneja_formulario.php" method="post">
+        <fieldset>
+        <legend>Datos personales</legend>
+        Departamento <br/>
+        <select name="menu">
+            <option>-selecciona-</option>
+            <option>Santander</option>
+            <option>Norte de Santander </option>
+            <option>Antioquia</option>
+        </select>
+        <br/>
+        Apellidos <br/>
+        <input type="date" name="date" id="date">
+        <br/>
+        Identificación <br/>
+        <select name="iden" id="iden">
+            <option value="ass">Administración de bases de datos</option>
+            <option value="ass">Análisis y programación</option>
+            <option value="ass">Arquitectura</option>
+            <option value="ass">Calidad</option>
+            <option value="ass">ERP, CRM, Business Intelligence</option>
+        </select>
+        </fieldset>
+        <input type="submit" value="Guardar cambios"><input type="reset" value="Borrar los datos introducidos">
+
+        
+        
+    </body>
